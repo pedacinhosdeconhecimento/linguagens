@@ -1,0 +1,31 @@
+<!-- É possível também adicionar áudio na página -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+
+<body>
+
+    <!-- Para adicionar áudio na página é só usar a tag "<audio>" -->
+    <!-- "src" vai o endereço de onde está o áudio -->
+    <!-- Também é possível usar alguns atributos que foram usados no vídeo, como "controls" que é usado para aparecer os controles -->
+    <audio src=""></audio>
+
+    <!-- Uma coisa interessante é que dá para usar a tag "<source>" dentro da tag "<audio>", com ela é possível colocar mais de uma opção de formato de áudio para caso o navegador não consiga carregar uma em específico -->
+    <audio>
+
+        <!-- Em "src" vai o endereço de onde está o áudio -->
+        <!-- Em "type" vai o tipo -->
+        <source src="" type="audio/ogg"> <!-- Formato de áudio OGG -->
+        <source src="" type="audio/mpeg"> <!-- Formato de ádio MP3 -->
+
+    </audio>
+    
+</body>
+
+</html>

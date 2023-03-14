@@ -1,0 +1,40 @@
+<!-- Assim como imagens, também é possível adicionar vídeos na página -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+</head>
+
+<body>
+
+    <!-- Para adicionar um vídeo na página, é só usar a tag "<video>" -->
+    <!-- "src" vai o endereço de onde está o vídeo -->
+    <video src=""></video>
+
+    <!-- Além de ter "height" e "width" para definir a altura e a largura, a tag "<video>" tem vários outros atributos interessantes, sendo eles:
+    "controls" - Usado para aparecer os controls do vídeo;
+    "muted" - Deixa o vídeo sem som;
+    "autoplay" - Usado para iniciar o vídeo assim que a página carrega (vale ressaltar que em alguns navegadores, ele só dá o play se o vídeo estiver sem som);
+    "loop" - Toda vez que o vídeo acabar, faz com que ele inicie de novo;
+    "poster" - Define uma thumb para o vídeo, ou seja, define uma foto de capa para o vídeo -->
+    <video src="" width="500px" controls muted autoplay loop poster=""></video>
+
+    <!-- Existe também o atributo "preload" que pode ter 3 valores, sendo eles: "auto", "metadata" e "none" -->
+    <!-- "auto" - Assim que a página terminar de carregar, faz com que o vídeo comece a carregar na memória do navegador, ou seja, quando o usuário iniciar o vídeo, já vai ter uma parte carregada -->
+    <video src="" width="500px" preload="auto"></video>
+
+    <!-- "metadata" - Assim que a página terminar de carregar, faz com que alguns dados sejam carregados, como o tamanho do vídeo, nome e etc -->
+    <video src="" width="500px" preload="metadata"></video>
+
+    <!-- "none" - Faz com que o vídeo só carregue quando o usuário iniciar o vídeo -->
+    <video src="" width="500px" preload="none"></video>
+    
+    <!-- Vale ressaltar que caso seja colocado o "preload" com o "autoplay" na mesma tag, o "preload" vai ser ignorado pelo fato do "autoplay" ser mais importante -->
+    
+</body>
+
+</html>

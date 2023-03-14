@@ -1,0 +1,33 @@
+<!-- Normalmente, quando é usado uma imagem em um site, logo abaixo é colocado uma legenda -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure</title>
+</head>
+
+<body>
+    
+    <!-- Uma maneira comum seria colocar a imagem e um parágrafo para a legenda... -->
+    <img src="luna.png" alt="Icone da Luna" height="100px" width="100px">
+    <p>Esse é o icone da Luna!</p>
+
+    <!-- ... porém, o navegador não sabe que ambos estão relacionados, para ele são coisas totalmente diferentes, para isso existe a tag "<figure>"-->
+
+    <br>
+
+    <!-- A tag "<figure>" é usada para linkar a imagem com a legenda -->
+    <figure>
+        <img src="luna.png" alt="Icone da Luna" height="100px" width="100px">
+
+        <!-- Ao invés de usar a tag "<p>" para adicionar a legenda, tem uma tag específica para legendas de imagens dentro da tag "<figure>", que é a tag "<figcaption>" -->
+        <figcaption>Esse é o icone da Luna!</figcaption>
+    </figure>
+
+
+</body>
+
+</html>

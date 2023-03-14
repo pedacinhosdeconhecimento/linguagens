@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+
+<body>
+    <form method="get" action="">
+
+        <!-- A tag "<input>" é usada para criar um elemento que possa entrar dados -->
+        <!-- type é o tipo de input -->
+        <!-- name é usado para dizer ao navegador que dado vai alí dentro -->
+        <!-- type do tipo "text" serve para colocar texto -->
+        <input type="text" name="nome">
+
+        <br>
+
+        <!-- Serve para colocar senhas -->
+        <input type="password" name="senha">
+
+        <br>
+
+        <!-- Cria uma caixinha de marcação, o value é importante para saber a opção que foi marcada -->
+        <input type="checkbox" name="curso" value="opcao1"> Opção 1
+        <input type="checkbox" name="curso" value="opcao2"> Opção 2
+
+        <br>
+
+        <!-- Mesmo esquema do checkbox, porém o radio é usado quando só pode usar uma opção, e o checked serve para já vir marcada essa opção -->
+        <input type="radio" name="genero" value="m" checked> Masculino
+        <input type="radio" name="genero" value="f">Feminino
+
+        <br>
+
+        <!-- Cria um botão que limpa os campos -->
+        <input type="reset" value="Limpar"> <!-- Com o value muda o nome do botão -->
+
+        <!-- Cria um botão de envio -->
+        <input type="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!-- Com o HTML5, vieram algumas tags bem úteis e interessantes -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input HTML5</title>
+</head>
+
+<body>
+    <form method="post" action="">
+
+        <!-- Abre uma caixa de seleção de cores e ao enviar, ele envia o código da cor em hexadecimal -->
+        <input type="color" name="cor">
+
+        <br>
+
+        <!-- Permite selecionar uma data, o formato padrão é ano-mês-dia -->
+        <!-- O min serve para colocar uma data mínima de seleção, no caso não permite selecionar uma data antes de 2022-03-19, no lugar de min também dá para usar o max, que não vai permitir selecionar uma data depois da data que for colocada. -->
+        <input type="date" name="data" min="2022-03-19">
+        
+        <br>
+
+        <!-- Mesmo esquema que o anterior, porém também permite selecionar a hora  -->
+        <input type="datetime-local" name="dataehora">
+
+        <br>
+
+        <!-- Envia um arquivo -->
+        <input type="file" name="arquivo"> <!-- O form tem que estar usando o método post -->
+
+        <br>
+
+        <!-- Só permite digitar números -->
+        <!-- O min serve para colocar um número mínimo, e o max serve para colocar um número máximo e o value para colocar um número inicial -->
+        <input type="number" name="numerico" min="5" max="10" value="9">
+        
+        <br>
+
+        <!-- Cria uma barrinha de slider -->
+        <input type="range" name="intervalo" min="5" max="10" value="9">
+
+        <br>
+
+        <!-- Se tú tiver no celular, vai aparecer só o teclado numérico para digitar -->
+        <input type="tel" name="telefone">
+
+        <br>
+
+        <!-- Verifica se de fato é um email -->
+        <input type="email" name="email">
+
+        <!-- Apesar de úteis, é bom tomar cuidado pois dependendo do navegador, algumas delas podem não funcionar -->
+       
+    </form>
+</body>
+
+</html>
